@@ -47,10 +47,15 @@
 
 /* Responsive collapse for mobile */
 @media (max-width: 768px) {
-    .columns-container.responsive-columns {
-        flex-direction: column;
-    }
+  .columns-container {
+    flex-direction: column !important;
+  }
+
+  .columns-container .column {
+    padding: var(--pad-sm);
+  }
 }
+
 
 
 /* Section: Hero */
@@ -120,3 +125,18 @@
     color: var(--color-00);
     transform: translateY(-2px);
 }
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero .button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+}
+

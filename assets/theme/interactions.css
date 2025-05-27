@@ -66,3 +66,28 @@ form .slam-button {
     width: auto;
     display: inline-block;
 }
+
+@media (max-width: 480px) {
+  button, .slam-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+    padding: var(--pad-sm);
+  }
+
+  main {
+    padding: var(--pad-md);
+  }
+}
+
